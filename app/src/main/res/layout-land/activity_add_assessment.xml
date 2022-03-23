@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddAssessment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="333dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="15dp"
+                android:text="Assessment Title:"
+                android:textAlignment="textStart"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/addAssessmentTitle"
+                android:layout_width="337dp"
+                android:layout_height="67dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="333dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="16dp"
+                android:text="Assessment Start Date:"
+                android:textAlignment="textStart"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/assessmentAddStartDateField"
+                android:layout_width="337dp"
+                android:layout_height="67dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="333dp"
+                android:layout_height="59dp"
+                android:text="Assessment End Date:"
+                android:textAlignment="textStart"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/assessmentAddEndDateField"
+                android:layout_width="337dp"
+                android:layout_height="67dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="333dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="24dp"
+                android:text="Assessment Type:"
+                android:textAlignment="textStart"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:layout_width="318dp"
+                android:layout_height="117dp"
+                android:layout_marginStart="24dp">
+
+                <RadioButton
+                    android:id="@+id/objectiveAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onAddAssessmentType"
+                    android:text="Objective" />
+
+                <RadioButton
+                    android:id="@+id/performanceAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onAddAssessmentType"
+                    android:text="Performance" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="24dp"
+                android:onClick="onBackToAssessmentList"
+                android:text="BACK" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:onClick="onSaveAddAssessment"
+                android:text="SAVE" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

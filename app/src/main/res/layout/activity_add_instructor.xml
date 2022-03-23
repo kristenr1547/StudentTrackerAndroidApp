@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddInstructor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="24dp"
+                android:text="INSTRUCTOR EMAIL:"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                />
+            <EditText
+                android:id="@+id/instructorEmailDetails"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="INSTRUCTOR EMAIL"
+                android:inputType="textPersonName"
+                />
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="24dp"
+                android:text="INSTRUCTOR PHONE:"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/instructorPhoneDetails"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="INSTRUCTOR PHONE"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="24dp"
+                android:text="INSTRUCTOR NAME:"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/instructorNameDetails"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="INSTRUCTOR NAME"
+                android:inputType="textPersonName" />
+
+
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:onClick="onBackToInstructorList"
+                android:text="back" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:onClick="saveAddInstructor"
+                android:text="save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CourseDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="3dp"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:text="COURSE TITLE:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editCourseDetailsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:text="COURSE START:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editCourseDetailsStart"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="COURSE END:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editCourseDetailsEnd"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="COURSE STATUS:"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/detailsInProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="courseDetailStatusChange"
+                    android:text="In Progress" />
+
+                <RadioButton
+                    android:id="@+id/detailsDropped"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="courseDetailStatusChange"
+                    android:text="Dropped" />
+
+                <RadioButton
+                    android:id="@+id/detailsCompleted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="courseDetailStatusChange"
+                    android:text="Completed" />
+
+                <RadioButton
+                    android:id="@+id/detailsPlanningToTake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="courseDetailStatusChange"
+                    android:text="Planning To Take" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/viewAssessments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onViewAssessments"
+                android:text="VIEW ASSESSMENTS" />
+
+            <Button
+                android:id="@+id/viewInstructors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onViewInstructors"
+                android:text="VIEW INSTRUCTORS" />
+
+            <Button
+                android:id="@+id/viewNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onViewNotes"
+                android:text="VIEW NOTES" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onDeleteCourse"
+                android:text="DELETE" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBack"
+                android:text="BACK " />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSave"
+                android:text="SAVE" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
